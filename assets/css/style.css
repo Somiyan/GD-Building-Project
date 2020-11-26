@@ -550,6 +550,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
   #hero{
+    background-image: none;
     background-position: center;
     background: url("../img/Downloads/7.jpg");
     background-repeat: no-repeat;

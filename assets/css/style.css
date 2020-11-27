@@ -599,6 +599,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 992px) {
+  #hero {
+    background-attachment: fixed;
+  }
   #hero:before {
     content: "";
     background: rgba(255, 255, 255, 0.8);

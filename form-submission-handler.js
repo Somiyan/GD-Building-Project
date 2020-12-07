@@ -63,21 +63,33 @@
       return false;
     }
 
+    // var load = document.getElementById("loader");
+    // load.style.display = "block";
+
+
+
     disableAllButtons(form);
     var url = form.action;
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url);
     // xhr.withCredentials = true;
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    var load = document.getElementById("loader");
+    load.style.display = "block";
     xhr.onreadystatechange = function() {
+
       if (xhr.readyState === 4 && xhr.status === 200) {
+
         form.reset();
         var formElements = form.querySelector(".form-elements")
         if (formElements) {
           formElements.style.display = "none"; // hide form
         }
+
         // var thankYouMessage = form.querySelector(".thankyou_message");
         // if (thankYouMessage) {
+
+
           alert("Thanks for contacting us! We will get back to you soon!");
           window.location.reload();
 

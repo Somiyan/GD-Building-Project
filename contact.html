@@ -41,18 +41,35 @@
   <header id="header" class="fixed-top">
     <div class="container-fluid d-flex justify-content-between align-items-center">
 
-      <h1 class="logo"><a href="index.html">Kelly</a></h1>
+      <h1 class="logo"><a href="index.html">Brand Name</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li class="drop-down"><a href="">Sites</a>
+            <ul>
+              <li class="drop-down"><a href="#">Bhayandar</a>
+                <ul>
+                  <li><a href="#">Indralok Phase 1</a></li>
+                  <li><a href="#">Indralok Phase 2</a></li>
+                  <li><a href="#">Indralok Phase 3</a></li>
+                  <li><a href="#">Indralok Phase 4</a></li>
+                  <li><a href="#">Indralok Phase 5</a></li>
+                  <li><a href="#">Indralok Phase 6</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Palghar</a></li>
+              <li><a href="#">Umbergaon</a></li>
+              <li><a href="#">Boisar</a></li>
+              <li><a href="#">Marine Drive</a></li>
+            </ul>
+          </li>
           <li class="active"><a href="contact.html">Contact</a></li>
+          <li><a href="services.html">Developers Details</a></li>
+          <!-- <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li> -->
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -74,12 +91,14 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Customer service</h2>
+          <p>At organization name it is our constant endeavor to ensure that your dealings with us are satisfactory and pleasurable. We value your feedback and encourage you to let us know whenever we have not come up to your expectations</p>
         </div>
 
         <div>
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+          <iframe style="border:0; width: 100%; height: 270px;"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.34839797736743!2d72.86300130387032!3d19.30086721097468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa77311dc6c570d69!2sMukund%20Tower%20CHS%20Ltd!5e0!3m2!1sen!2sin!4v1606736139104!5m2!1sen!2sin"
+            frameborder="0" allowfullscreen></iframe>
         </div>
 
         <div class="row mt-5">
@@ -89,19 +108,19 @@
               <div class="address">
                 <i class="icofont-google-map"></i>
                 <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>402 Mukund Tower Near Ujjwal Heights New Golden Nest Road Bhayander East</p>
               </div>
 
               <div class="email">
                 <i class="icofont-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p>uttambogati22@gmail.com</p>
               </div>
 
               <div class="phone">
                 <i class="icofont-phone"></i>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p>+91 8898150501</p>
               </div>
 
             </div>
@@ -110,17 +129,22 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="https://script.google.com/macros/s/AKfycbzPbWw7D8PfHQsqKePLgLYEigs_7p8aeqAH5_f6QcjusMHTXUaQ/exec" method="POST" role="form" class="gform">
               <div class="form-row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="tel" class="form-control" name="mobile_no" id="phone-number" placeholder="Phone Number" maxlength="10" required />
                   <div class="validate"></div>
                 </div>
               </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required />
+                <div class="validate"></div>
+              </div>
+
               <div class="form-group">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                 <div class="validate"></div>
@@ -129,12 +153,22 @@
                 <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                 <div class="validate"></div>
               </div>
-              <div class="mb-3">
+              <!-- <div class="mb-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div> -->
+              <!-- <div style="display:none; text-align: center;" id="thankyou_message" class="thankyou_message form-group alert alert-success">
+
+                <h5>Thanks for contacting us! We will get back to you soon!
+                </h5>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div style="display:none" id="error_message" class="error_message form-group alert alert-danger">
+
+                <h5><em>Opps!</em> something went wrong, please try again.</h5>
+              </div> -->
+
+              <div class="text-center php-email-form"><button type="submit">Send Message</button></div>
             </form>
 
           </div>
@@ -150,14 +184,14 @@
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Kelly</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Organization Name</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="https://bootstrapmade.com/">Gareeb Developers</a>
       </div>
     </div>
   </footer><!-- End  Footer -->
@@ -179,6 +213,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- form handling ajax -->
+  <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
 
 </body>
 
